@@ -16,7 +16,7 @@ body {
 h1, h2, h3, h4, ul dl dt {
     font-family: 'Helvetica Neue Light', 'Helvetica', Arial, serif;
 }
-
+/*
 h1:before{
     content: "+";
     font-weight: bold;
@@ -25,11 +25,11 @@ h1:before{
     position: relative;
     top: -0.4em;
 }
-
+*/
 .container {
     margin: 0 auto;
     padding: 0;
-    background: whiteSmoke;
+    background: white;
     border: solid #666;
     border-width: 8px 0 2px 0;
     text-align: left;
@@ -44,13 +44,19 @@ a {
     color: #990003;
 }
 
-a[href$='.pdf'] {
+a[href$='resume.pdf'] {
     display: inline-block;
     background: #666;
     color: white;
-    padding: 6px 12px;
+    padding: 4px 5px;
     margin-bottom: 6px;
     text-decoration: none;
+}
+
+.profile a {
+  color: #444;
+  text-decoration: none;
+  line-height: 30px;
 }
 
 blockquote {
@@ -109,7 +115,6 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: table;
 }
 ul li {
     margin: 0;
@@ -134,7 +139,7 @@ ul dl {
 ol {
     margin: 0;
     padding: 0 0 .75em;
-    width: 80%;
+    width: 84%;
     display: inline-block;
 }
 
@@ -145,7 +150,7 @@ ol li {
     width: 100%;
     float: left;
     list-style: none;
-    line-height: 24px;
+    line-height: 20px;
     font-size: 14px;
 }
 ol li:nth-child(1) {
@@ -165,7 +170,7 @@ dl {
         font-size: 140%;
     }
     dd {
-        margin: 0 0 1.5em;
+        margin: 0 0 0em;
         padding: 0;
         font-size: 80%;
         line-height: 1.4em;
@@ -186,7 +191,9 @@ dl dd li{width: 100%; margin: 0 1em 1em; list-style-type: square;}
 dl dt{display: block; clear: both;}
 dl dt{border-top: 1px solid #ccc; padding-top: 1em;}
 h3 + dl dt:first-child{border: 0;padding-top: 0;}
-dl dd p:first-child{font-weight: bold; text-transform: uppercase; font-size: 1.2em;}
+/* dl dd p:first-child{font-weight: bold; text-transform: uppercase; font-size: 1.2em;} */
+dd p { margin: 0em; }
+dd ul { margin: 1em 0em; display: inline-block; }
 
 ul li dt{border: 0; padding-top: 0;}
 
